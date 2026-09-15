@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <title>Skills Test 🐍</title>
+</head>
+
+<style>
+
+    #h1{
+        color: rgb(198, 189, 222);
+        font-size: 2.5em;
+        margin-top: 7%;
+        text-align: center;
+    }
+
+    #h2{
+        color: rgb(198, 189, 222);
+        font-size: 2.5em;
+        margin-top: 20px;
+    }
+
+    #form{
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px;
+        color: rgb(198, 189, 222);
+        background-color: rgba(52, 47, 64, 0.8);
+        border-radius: 25px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    button{
+        background-color: rgb(198, 189, 222);
+        color: #3b364a;
+        border: none;
+        padding: 10px 20px;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #divider{
+        color: rgb(198, 189, 222);
+        text-align: center;
+    }
+
+</style>
+<body>
+
+    <h1 id="h1">KNØT's Goodie List</h1>
+        <label for="goodies"></label>
+
+    <div id="form">
+    <form action="">
+
+        <h2 id="h2">Items</h2>
+
+        <input type="checkbox" id="item1" value="200.00">
+            <label for="item1" id="label1">Button Headbands</label>
+
+        <br><br>
+
+        <input type="checkbox" id="item2" value="200.00">
+            <label for="item2" id="label2">Beanie</label>
+
+        <br><br>
+
+        <input type="checkbox" id="item3" value="630.00">
+            <label for="item3" id="label3">Bow Bags</label>
+
+        <br><br>
+
+        <input type="checkbox" id="item4" value="150.00">
+            <label for="item4" id="label4">Kot Keychains</label>
+
+        <br><br>
+
+        <button type="button" py-click="create_order">Create Order</button>
+
+        <h3 id="divider">↻      ◁     //     ▷       ↺</h3>
+
+        <br><br>
+    
+    </form>
+    </div>
+
+    <div id="output1"></div>
+    <div id="output2"></div>
+
+
+    <script type="py" src="main.py"></script>
+    
+</body>
+</html>
