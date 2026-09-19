@@ -23,4 +23,6 @@ def create_order(e):
     #display(grandtotal, target="output1")
 
     display(f'⊹ Receipt ⊹', target = "receipt")
+    display(f'Subtotal: Php.{subtotal}!', target = "receipt")
+    display(f'Tax: Php.{tax}!', target = "receipt")
     display(f'Your total is Php.{grandtotal}!', target = "receipt")
